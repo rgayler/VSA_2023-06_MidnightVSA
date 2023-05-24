@@ -1,0 +1,24 @@
+---
+title: "Thinking about Vector Symbolic Architectures"
+author: "Ross W Gayler"
+format: html
+---
+
+## Abstract
+
+Vector Symbolic Architectures are defined in terms of a very small set of operators acting on a vector space.
+The task of the VSA researcher is to discover the implications that follow from the definition in terms of the systems that can be implemented with VSAs.
+
+The VSA definitions are the researcher's raw materials, but they also need tools to transform those raw materials into useful hypotheses and system designs.
+One important tool for a researcher is a conceptual framework, which specifies how the researcher thinks about VSAs and relates them to the other things they know.
+It is the researcher's mental model of how VSAs work.
+
+The primary requirement for a conceptual framework is that it is productive; it should make it easy for the researcher to generate interesting hypotheses and designs.
+These hypotheses and designs don't have to be correct, just plausible.
+Beating them into shape is a different part of the research process.
+
+Most VSA research papers contain a statement of the VSA definition.
+Very few mention the researcher's conceptual framework.
+In this talk I will sketch out my conceptual framework - how I think about Vector Symbolic Architectures - in the hope that it might be interesting and useful to other researchers.
+
+## 
