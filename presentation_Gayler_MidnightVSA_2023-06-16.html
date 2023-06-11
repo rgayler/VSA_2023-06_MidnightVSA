@@ -339,26 +339,77 @@
 </div>
 
 </section>
-<section id="quarto" class="slide level2">
-<h2>Quarto</h2>
-<p>Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <a href="https://quarto.org/docs/presentations/" class="uri">https://quarto.org/docs/presentations/</a>.</p>
-</section>
-<section id="bullets" class="slide level2">
-<h2>Bullets</h2>
-<p>When you click the <strong>Render</strong> button a document will be generated that includes:</p>
+<section id="motivation" class="slide level2">
+<h2>Motivation</h2>
 <ul>
-<li>Content authored with markdown</li>
-<li>Output from executable code</li>
+<li>How far would you get with knowing the definitions of the VSA operators and <em>nothing</em> else?
+<ul>
+<li>Like having axioms and no other maths knowledge</li>
+</ul></li>
+<li>Everyone has a web of auxiliary <em>beliefs</em> around VSA:
+<ul>
+<li><p>About VSA and relationships to other things they know</p></li>
+<li><p>Used to reason about their VSA knowledge and its implications, so is central to applying and extending VSA</p></li>
+</ul></li>
+<li>The objective is that the auxiliary beliefs should be <em>productive</em> for applying and extending VSA</li>
 </ul>
 </section>
-<section id="code" class="slide level2">
-<h2>Code</h2>
-<p>When you click the <strong>Render</strong> button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
+<section id="limitations" class="slide level2">
+<h2>Limitations</h2>
+<p>Auxiliary beliefs are:</p>
+<ul>
+<li>Not necessarily true</li>
+<li>Not necessarily even true or false (e.g.&nbsp;metaphors)</li>
+<li>Not necessarily coherent</li>
+<li>Not stable over time. Think of them as evolving frameworks.</li>
+<li>Likely to be idiosyncratic (If they were canonical they would be VSA theory)</li>
+</ul>
+<p>Think of them as gambles. You are betting that they will be more productive than alternatives you might entertain.</p>
+</section>
+<section id="disorganisation-of-the-talk" class="slide level2">
+<h2>(dis)Organisation of the talk</h2>
+<ul>
+<li><p>I am talking about my conceptual framework</p>
+<ul>
+<li><p>I have no idea what yours is, because we don’t discuss it</p></li>
+<li><p>This may be painfully obvious to you. I apologise.</p></li>
+</ul></li>
+<li><p>Framework is densely connected web of interrelated points</p>
+<ul>
+<li><p>No simple, logical, explanatory path through that web</p></li>
+<li><p>Any path is necessarily a random-ish ramble. I apologise.</p></li>
+<li><p>Argument is necessarily by hand waving (modus waftens)</p></li>
+</ul></li>
+<li><p>Pick some apparently salient points, wander in their neighbourhoods, point out some more distant relations</p></li>
+</ul>
+</section>
+<section id="analogue-wire-interpretation" class="title-slide slide level1 center">
+<h1>Analogue wire interpretation</h1>
+
+</section>
+
+<section id="miracle-of-emergent-computation" class="title-slide slide level1 center">
+<h1>Miracle of emergent computation</h1>
+
+</section>
+
+<section id="hypervectors-are-row-vectors" class="title-slide slide level1 center">
+<h1>Hypervectors are row vectors</h1>
+
+</section>
+
+<section id="permutation-and-indices" class="title-slide slide level1 center">
+<h1>Permutation and indices</h1>
+
+</section>
+
+<section id="understand-everything-at-the-element-level" class="title-slide slide level1 center">
+<h1>Understand everything at the element level</h1>
+
+</section>
+
+<section id="dimensionality-and-constraints" class="title-slide slide level1 center">
+<h1>Dimensionality and constraints</h1>
 <div class="footer footer-default">
 <p>Midnight Sun Workshop on Vector Symbolic Architectures, June 15-16, 2023, Luleå, Sweden</p>
 </div>
@@ -574,44 +625,6 @@
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

@@ -10,23 +10,57 @@ format:
     footer: "Midnight Sun Workshop on Vector Symbolic Architectures, June 15-16, 2023, Luleå, Sweden"
 ---
 
-## Quarto
+## Motivation
 
-Quarto enables you to weave together content and executable code into a finished presentation.
-To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+-   How far would you get with knowing the definitions of the VSA operators and *nothing* else?
+    -   Like having axioms and no other maths knowledge
+-   Everyone has a web of auxiliary *beliefs* around VSA:
+    -   About VSA and relationships to other things they know
 
-## Bullets
+    -   Used to reason about their VSA knowledge and its implications, so is central to applying and extending VSA
+-   The objective is that the auxiliary beliefs should be *productive* for applying and extending VSA
 
-When you click the **Render** button a document will be generated that includes:
+## Limitations
 
--   Content authored with markdown
--   Output from executable code
+Auxiliary beliefs are:
 
-## Code
+-   Not necessarily true
+-   Not necessarily even true or false (e.g. metaphors)
+-   Not necessarily coherent
+-   Not stable over time. Think of them as evolving frameworks.
+-   Likely to be idiosyncratic (If they were canonical they would be VSA theory)
 
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code.
-You can embed code like this:
+Think of them as gambles.
+You are betting that they will be more productive than alternatives you might entertain.
 
-```{r}
-1 + 1
-```
+## (dis)Organisation of the talk
+
+-   I am talking about my conceptual framework
+
+    -   I have no idea what yours is, because we don't discuss it
+
+    -   This may be painfully obvious to you.
+        I apologise.
+
+-   Framework is densely connected web of interrelated points
+
+    -   No simple, logical, explanatory path through that web
+
+    -   Any path is necessarily a random-ish ramble.
+        I apologise.
+
+    -   Argument is necessarily by hand waving (modus waftens)
+
+-   Pick some apparently salient points, wander in their neighbourhoods, point out some more distant relations
+
+# Analogue wire interpretation
+
+# Miracle of emergent computation
+
+# Hypervectors are row vectors
+
+# Permutation and indices
+
+# Understand everything at the element level
+
+# Dimensionality and constraints
