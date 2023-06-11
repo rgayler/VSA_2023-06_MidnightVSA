@@ -348,8 +348,8 @@
 </ul></li>
 <li>Everyone has a web of auxiliary <em>beliefs</em> around VSA:
 <ul>
-<li><p>About VSA and relationships to other things they know</p></li>
-<li><p>Used to reason about their VSA knowledge and its implications, so is central to applying and extending VSA</p></li>
+<li>About VSA and relationships to other things they know</li>
+<li>Used to reason about their VSA knowledge and its implications, so is central to applying and extending VSA</li>
 </ul></li>
 <li>The objective is that the auxiliary beliefs should be <em>productive</em> for applying and extending VSA</li>
 </ul>
@@ -369,25 +369,91 @@
 <section id="disorganisation-of-the-talk" class="slide level2">
 <h2>(dis)Organisation of the talk</h2>
 <ul>
-<li><p>I am talking about my conceptual framework</p>
+<li>I am talking about my conceptual framework
 <ul>
 <li><p>I have no idea what yours is, because we don’t discuss it</p></li>
 <li><p>This may be painfully obvious to you. I apologise.</p></li>
 </ul></li>
-<li><p>Framework is densely connected web of interrelated points</p>
+<li>Framework is densely connected web of interrelated points
 <ul>
 <li><p>No simple, logical, explanatory path through that web</p></li>
 <li><p>Any path is necessarily a random-ish ramble. I apologise.</p></li>
 <li><p>Argument is necessarily by hand waving (modus waftens)</p></li>
 </ul></li>
-<li><p>Pick some apparently salient points, wander in their neighbourhoods, point out some more distant relations</p></li>
+<li>Pick some apparently salient points, wander in their neighbourhoods, point out some more distant relations</li>
 </ul>
 </section>
-<section id="analogue-wire-interpretation" class="title-slide slide level1 center">
-<h1>Analogue wire interpretation</h1>
+<section>
+<section id="analogue-computer-wire-interpretation" class="title-slide slide level1 center">
+<h1>Analogue computer wire interpretation</h1>
 
 </section>
-
+<section id="composite-label-and-magnitude" class="slide level2">
+<h2>Composite label and magnitude</h2>
+<p><strong>Q</strong>: What is a (hyper)vector? <strong>A</strong>: Direction + scalar magnitude</p>
+<ul>
+<li>Electric analogue computers represent values on wires. The voltage is the magnitude of the signal, the “meaning” of the signal is a label on the wire.</li>
+<li>Interpret the vector magnitude as the signal magnitude.</li>
+<li>Interpret the vector direction as the signal label.</li>
+<li>Labels are composite - (de)composed by VSA operators</li>
+<li>Labels (wires) can be created on the fly</li>
+</ul>
+<p>Think of VSA systems as analogue computers</p>
+</section>
+<section id="labels-can-encode-values" class="slide level2">
+<h2>Labels can encode values</h2>
+<p>Is it too limiting for values to be scalar magnitudes? What if I want structured values?</p>
+<ul>
+<li>Composite labels can encode values, e.g.<br>
+<span class="math inline">\(colour \times red\)</span> or <span class="math inline">\(height \times encode(180)\)</span>
+<ul>
+<li>Interpret the label as a predicate</li>
+<li>Interpret magnitude as truth value or degree of support</li>
+</ul></li>
+<li>To avoid -ve magnitude, put the sign in the label: <span class="math inline">\(-(a)\)</span>
+<ul>
+<li>Use unary additive and multiplicative inverse operators</li>
+</ul></li>
+<li>May need mechanism (e.g.&nbsp;RELU in cleanup) to enforce this</li>
+</ul>
+</section>
+<section id="labels-can-encode-complicated-values" class="slide level2">
+<h2>Labels can encode complicated values</h2>
+<p><strong>Slogan</strong>: <u>Everything is just a vector</u></p>
+<ul>
+<li>In GOFAI data structures, slots/fields/keys are atomic symbols: <span class="math inline">\(colour\)</span>, <span class="math inline">\(height\)</span>, …</li>
+<li>In VSA labels can be arbitrarily complicated, e.g.<br>
+<span class="math inline">\(go\_to\_kitchen\_and\_look\_in\_fridge \times beer\)</span><br>
+<span style="font-size: 60%">(where <span class="math inline">\(go\_to\_kitchen\_and\_look\_in\_fridge\)</span> represents an executable sensorimotor program)</span><br>
+is equivalent to the agent’s degree of belief that there is beer in the refrigerator.</li>
+</ul>
+</section>
+<section id="label-symmetries-and-equivalences" class="slide level2">
+<h2>Label symmetries and equivalences</h2>
+<p><strong>Slogan</strong>: <u>Every vector is just a value</u></p>
+<ul>
+<li>VSA “sees” the vector value, not the sequence of operations
+<ul>
+<li>Different sequences of operations can be equivalent, e.g.
+<ul>
+<li><span class="math inline">\(a + b = b + a\)</span> (if bundling is commutative)</li>
+<li>Circular convolution binding of <span class="math inline">\(d\)</span>-dimensional vectors is equal to the bundle of <span class="math inline">\(d\)</span>-many Hadamard bindings of permutations of the arguments</li>
+</ul></li>
+</ul></li>
+<li>“noise” can make unequal values effectively equal, e.g.<br>
+<span class="math inline">\(a + b + \cdots + y \approx a + b + \cdots + z\)</span> (bundling capacity)</li>
+</ul>
+</section>
+<section id="occams-hypervectors" class="slide level2">
+<h2>Occam’s hypervectors</h2>
+<ul>
+<li>Start with the atomic vectors in their vector space</li>
+<li>Repeatedly apply the operators to generate expressions of increasing length</li>
+<li>Crowding of result vectors increases with expression length</li>
+<li>Every sufficiently long expression will be approximately equal to some shorter expression</li>
+<li>Implies a form of Occam’s Razor: The system treats any value as effectively arising from the simplest expression that approximately generates that value.</li>
+</ul>
+</section></section>
 <section id="miracle-of-emergent-computation" class="title-slide slide level1 center">
 <h1>Miracle of emergent computation</h1>
 

@@ -16,7 +16,6 @@ format:
     -   Like having axioms and no other maths knowledge
 -   Everyone has a web of auxiliary *beliefs* around VSA:
     -   About VSA and relationships to other things they know
-
     -   Used to reason about their VSA knowledge and its implications, so is central to applying and extending VSA
 -   The objective is that the auxiliary beliefs should be *productive* for applying and extending VSA
 
@@ -36,24 +35,75 @@ You are betting that they will be more productive than alternatives you might en
 ## (dis)Organisation of the talk
 
 -   I am talking about my conceptual framework
-
     -   I have no idea what yours is, because we don't discuss it
 
     -   This may be painfully obvious to you.
         I apologise.
-
 -   Framework is densely connected web of interrelated points
-
     -   No simple, logical, explanatory path through that web
 
     -   Any path is necessarily a random-ish ramble.
         I apologise.
 
     -   Argument is necessarily by hand waving (modus waftens)
-
 -   Pick some apparently salient points, wander in their neighbourhoods, point out some more distant relations
 
-# Analogue wire interpretation
+# Analogue computer wire interpretation
+
+## Composite label and magnitude
+
+**Q**: What is a (hyper)vector?
+**A**: Direction + scalar magnitude
+
+-   Electric analogue computers represent values on wires. The voltage is the magnitude of the signal, the "meaning" of the signal is a label on the wire.
+-   Interpret the vector magnitude as the signal magnitude.
+-   Interpret the vector direction as the signal label.
+-   Labels are composite - (de)composed by VSA operators
+-   Labels (wires) can be created on the fly
+
+Think of VSA systems as analogue computers
+
+## Labels can encode values
+
+Is it too limiting for values to be scalar magnitudes?
+What if I want structured values?
+
+-   Composite labels can encode values, e.g.\
+    $colour \times red$ or $height \times encode(180)$
+    -   Interpret the label as a predicate
+    -   Interpret magnitude as truth value or degree of support
+-   To avoid -ve magnitude, put the sign in the label: $-(a)$
+    -   Use unary additive and multiplicative inverse operators
+-   May need mechanism (e.g. RELU in cleanup) to enforce this
+
+## Labels can encode complicated values
+
+**Slogan**: [Everything is just a vector]{.underline}
+
+-   In GOFAI data structures, slots/fields/keys are atomic symbols: $colour$, $height$, ...
+-   In VSA labels can be arbitrarily complicated, e.g.\
+    $go\_to\_kitchen\_and\_look\_in\_fridge \times beer$\
+    [(where $go\_to\_kitchen\_and\_look\_in\_fridge$ represents an executable sensorimotor program)]{style="font-size: 60%"}\
+    is equivalent to the agent's degree of belief that there is beer in the refrigerator.
+
+## Label symmetries and equivalences
+
+**Slogan**: [Every vector is just a value]{.underline}
+
+-   VSA "sees" the vector value, not the sequence of operations
+    -   Different sequences of operations can be equivalent, e.g.
+        -   $a + b = b + a$ (if bundling is commutative)
+        -   Circular convolution binding of $d$-dimensional vectors is equal to the bundle of $d$-many Hadamard bindings of permutations of the arguments
+-   "noise" can make unequal values effectively equal, e.g.\
+    $a + b + \cdots + y \approx a + b + \cdots + z$ (bundling capacity)
+
+## Occam's hypervectors
+
+-   Start with the atomic vectors in their vector space
+-   Repeatedly apply the operators to generate expressions of increasing length
+-   Crowding of result vectors increases with expression length
+-   Every sufficiently long expression will be approximately equal to some shorter expression
+-   Implies a form of Occam's Razor: The system treats any value as effectively arising from the simplest expression that approximately generates that value.
 
 # Miracle of emergent computation
 
