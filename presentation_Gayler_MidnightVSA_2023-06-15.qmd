@@ -5,10 +5,21 @@ author:
   orcid: "0000-0003-4679-585X"
   url: www.rossgayler.com
   email: ross@rossgayler.com
+institute: "Independent Researcher"
+date: "2023-06-15"
 format: 
   revealjs:
+    embed-resources: false # chalkboard MUST be disabled to embed resources
+    theme: default
+    progress: true
+    chalkboard: true
     footer: "Midnight Sun Workshop on Vector Symbolic Architectures, June 15-16, 2023, Luleå, Sweden"
+    slide-number: h.v
+    menu: 
+      numbers: true
 ---
+
+# Introduction
 
 ## Motivation
 
@@ -105,12 +116,44 @@ What if I want structured values?
 -   Every sufficiently long expression will be approximately equal to some shorter expression
 -   Implies a form of Occam's Razor: The system treats any value as effectively arising from the simplest expression that approximately generates that value.
 
+# Similarities
+
+## Angular similarity and distance
+
+-   Similarity is central to reasoning about VSA
+-   Angle between vectors (equivalent to dot product) is appropriate because it respects the arguments as vectors
+    -   Vectors are defined with respect to an origin
+
+    -   Distances between points are invariant to translation
+
+    -   Angle between vectors to the same points are not invariant to translation of the origin
+-   Distance and angle can be equivalent if points constrained to a fixed origin, e.g. Hamming distance for binary vectors
+
+## A view from the north pole
+
+-   Imagine the hypervector representing the state of a VSA system is the north pole and you are standing there
+-   Look at the locations of random hypervectors. They are almost all very near the equator (quasiorthogonality)
+-   Similarity is defined on pairs of vectors. Consider pairs related by transforms available to the system
+    -   Pairs within the equatorial belt (the vast majority) have no impact on similarity relative to pole (current state)
+
+    -   Angular similarity can't be only driver of system dynamics
+
+## Edit distance for binding/permutation
+
+-   Angular similarity is essentially about transforms within a hemi(hyper)sphere
+-   Angular similarity is driven by bundling
+-   Binding and permutation are equatorial belt transforms
+-   Something like an edit distance might be useful for selecting between equatorial transforms
+    -   Every destination is only one transform away if we allow arbitrary binding and permutation
+
+    -   Restrict to available permutations and [curried](https://en.wikipedia.org/wiki/Currying) bindings
+
 # Miracle of emergent computation
 
-# Hypervectors are row vectors
-
-# Permutation and indices
+# Dimensionality and constraints
 
 # Understand everything at the element level
 
-# Dimensionality and constraints
+# Permutation and indices
+
+# Hypervectors are row vectors

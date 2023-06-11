@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="presentation_Gayler_MidnightVSA_2023-06-16_files/libs/clipboard/clipboard.min.js"></script>
-<script src="presentation_Gayler_MidnightVSA_2023-06-16_files/libs/quarto-html/tabby.min.js"></script>
-<script src="presentation_Gayler_MidnightVSA_2023-06-16_files/libs/quarto-html/popper.min.js"></script>
-<script src="presentation_Gayler_MidnightVSA_2023-06-16_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="presentation_Gayler_MidnightVSA_2023-06-16_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="presentation_Gayler_MidnightVSA_2023-06-16_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="presentation_Gayler_MidnightVSA_2023-06-16_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="presentation_Gayler_MidnightVSA_2023-06-16_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/clipboard/clipboard.min.js"></script>
+<script src="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/quarto-html/tabby.min.js"></script>
+<script src="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/quarto-html/popper.min.js"></script>
+<script src="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.340">
 
   <meta name="author" content="Ross W. Gayler">
+  <meta name="dcterms.date" content="2023-06-15">
   <title>Thinking about Vector Symbolic Architectures</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="presentation_Gayler_MidnightVSA_2023-06-16_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="presentation_Gayler_MidnightVSA_2023-06-16_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -30,11 +31,13 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="presentation_Gayler_MidnightVSA_2023-06-16_files/libs/revealjs/dist/theme/quarto.css" id="theme">
-  <link href="presentation_Gayler_MidnightVSA_2023-06-16_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="presentation_Gayler_MidnightVSA_2023-06-16_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="presentation_Gayler_MidnightVSA_2023-06-16_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="presentation_Gayler_MidnightVSA_2023-06-16_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/revealjs/dist/theme/quarto.css" id="theme">
+  <link href="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -335,8 +338,17 @@
 <div class="quarto-title-author-email">
 <a href="mailto:ross@rossgayler.com">ross@rossgayler.com</a>
 </div>
+        <p class="quarto-title-affiliation">
+            Independent Researcher
+          </p>
+    </div>
 </div>
-</div>
+
+  <p class="date">2023-06-15</p>
+</section>
+<section>
+<section id="introduction" class="title-slide slide level1 center">
+<h1>Introduction</h1>
 
 </section>
 <section id="motivation" class="slide level2">
@@ -382,7 +394,7 @@
 </ul></li>
 <li>Pick some apparently salient points, wander in their neighbourhoods, point out some more distant relations</li>
 </ul>
-</section>
+</section></section>
 <section>
 <section id="analogue-computer-wire-interpretation" class="title-slide slide level1 center">
 <h1>Analogue computer wire interpretation</h1>
@@ -454,18 +466,56 @@ is equivalent to the agent’s degree of belief that there is beer in the refrig
 <li>Implies a form of Occam’s Razor: The system treats any value as effectively arising from the simplest expression that approximately generates that value.</li>
 </ul>
 </section></section>
+<section>
+<section id="similarities" class="title-slide slide level1 center">
+<h1>Similarities</h1>
+
+</section>
+<section id="angular-similarity-and-distance" class="slide level2">
+<h2>Angular similarity and distance</h2>
+<ul>
+<li>Similarity is central to reasoning about VSA</li>
+<li>Angle between vectors (equivalent to dot product) is appropriate because it respects the arguments as vectors
+<ul>
+<li><p>Vectors are defined with respect to an origin</p></li>
+<li><p>Distances between points are invariant to translation</p></li>
+<li><p>Angle between vectors to the same points are not invariant to translation of the origin</p></li>
+</ul></li>
+<li>Distance and angle can be equivalent if points constrained to a fixed origin, e.g.&nbsp;Hamming distance for binary vectors</li>
+</ul>
+</section>
+<section id="a-view-from-the-north-pole" class="slide level2">
+<h2>A view from the north pole</h2>
+<ul>
+<li>Imagine the hypervector representing the state of a VSA system is the north pole and you are standing there</li>
+<li>Look at the locations of random hypervectors. They are almost all very near the equator (quasiorthogonality)</li>
+<li>Similarity is defined on pairs of vectors. Consider pairs related by transforms available to the system
+<ul>
+<li><p>Pairs within the equatorial belt (the vast majority) have no impact on similarity relative to pole (current state)</p></li>
+<li><p>Angular similarity can’t be only driver of system dynamics</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="edit-distance-for-bindingpermutation" class="slide level2">
+<h2>Edit distance for binding/permutation</h2>
+<ul>
+<li>Angular similarity is essentially about transforms within a hemi(hyper)sphere</li>
+<li>Angular similarity is driven by bundling</li>
+<li>Binding and permutation are equatorial belt transforms</li>
+<li>Something like an edit distance might be useful for selecting between equatorial transforms
+<ul>
+<li><p>Every destination is only one transform away if we allow arbitrary binding and permutation</p></li>
+<li><p>Restrict to available permutations and <a href="https://en.wikipedia.org/wiki/Currying">curried</a> bindings</p></li>
+</ul></li>
+</ul>
+</section></section>
 <section id="miracle-of-emergent-computation" class="title-slide slide level1 center">
 <h1>Miracle of emergent computation</h1>
 
 </section>
 
-<section id="hypervectors-are-row-vectors" class="title-slide slide level1 center">
-<h1>Hypervectors are row vectors</h1>
-
-</section>
-
-<section id="permutation-and-indices" class="title-slide slide level1 center">
-<h1>Permutation and indices</h1>
+<section id="dimensionality-and-constraints" class="title-slide slide level1 center">
+<h1>Dimensionality and constraints</h1>
 
 </section>
 
@@ -474,8 +524,13 @@ is equivalent to the agent’s degree of belief that there is beer in the refrig
 
 </section>
 
-<section id="dimensionality-and-constraints" class="title-slide slide level1 center">
-<h1>Dimensionality and constraints</h1>
+<section id="permutation-and-indices" class="title-slide slide level1 center">
+<h1>Permutation and indices</h1>
+
+</section>
+
+<section id="hypervectors-are-row-vectors" class="title-slide slide level1 center">
+<h1>Hypervectors are row vectors</h1>
 <div class="footer footer-default">
 <p>Midnight Sun Workshop on Vector Symbolic Architectures, June 15-16, 2023, Luleå, Sweden</p>
 </div>
@@ -484,19 +539,20 @@ is equivalent to the agent’s degree of belief that there is beer in the refrig
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="presentation_Gayler_MidnightVSA_2023-06-16_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="presentation_Gayler_MidnightVSA_2023-06-16_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="presentation_Gayler_MidnightVSA_2023-06-16_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="presentation_Gayler_MidnightVSA_2023-06-16_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="presentation_Gayler_MidnightVSA_2023-06-16_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="presentation_Gayler_MidnightVSA_2023-06-16_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="presentation_Gayler_MidnightVSA_2023-06-16_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="presentation_Gayler_MidnightVSA_2023-06-16_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="presentation_Gayler_MidnightVSA_2023-06-16_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="presentation_Gayler_MidnightVSA_2023-06-16_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="presentation_Gayler_MidnightVSA_2023-06-15_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -511,7 +567,8 @@ is equivalent to the agent’s degree of belief that there is beer in the refrig
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true,"numbers":true},
+'chalkboard': {"buttons":true},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -532,7 +589,7 @@ is equivalent to the agent’s degree of belief that there is beer in the refrig
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: false,
+        slideNumber: 'h.v',
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
@@ -682,7 +739,7 @@ is equivalent to the agent’s degree of belief that there is beer in the refrig
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
           RevealMath,
           RevealNotes,
