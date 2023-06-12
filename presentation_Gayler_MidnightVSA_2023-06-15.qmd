@@ -55,9 +55,7 @@ You are betting that they will be more productive than alternatives you might en
 
     -   Any path is necessarily a random-ish ramble.
         I apologise.
-
-    -   Argument is necessarily by hand waving (modus waftens)
--   Pick some apparently salient points, wander in their neighbourhoods, point out some more distant relations
+-   Pick some apparently salient points, wander in their neighbourhoods, much hand waving
 
 # Analogue computer wire interpretation
 
@@ -148,12 +146,60 @@ What if I want structured values?
 
     -   Restrict to available permutations and [curried](https://en.wikipedia.org/wiki/Currying) bindings
 
-# Miracle of emergent computation
+# Estimating latent reality
 
-# Dimensionality and constraints
+## Latent reality and hypervectors
+
+-   We concentrate on the observable hypervectors
+-   Change our focus to unobservable reality
+    -   Inspired by being an applied statistician
+    -   Much of statistics is about inferring the state of an unobservable reality from observable measurements
+-   Hypervectors as observable realisations of measurements of unobservable (latent) reality
+    -   Try to explain the role of randomness in VSA
+
+## Elements as random measurements
+
+-   No direct access to reality (mediated by measurements)
+-   Imagine looking at an object
+    -   Random whether an atom reflects a photon to your eye
+    -   Random whether a photoreceptor is in the path
+-   Ultradimensional vector of potential measurements
+    -   Hypervector is a random sample of them: $\phi_i(x)$
+        -   $\phi_i$ is a function from reality $x$ to VSA base field
+    -   Want to infer the reality despite randomness of sample
+
+## Properties of random measurements
+
+-   VSA doesn't "know" $\phi_i$ (knows the value, not the function)
+-   Want measurements to be individually and collectively informative about $x$ (reality)
+    -   Need to depend on properties of $x$ we want to capture
+
+    -   Need to be independent conditional on $x$ (hash of $x$)
+-   Information is carried by covariation of $\phi_i(x)$ induced by variation in $x$
+-   No measurement is privileged (implies robustness, distributed representation, and unordered representation)
+
+## Measurements as constraints
+
+Imagine the VSA base field is binary:
+
+-   Each specific $\phi_i(x)$ is consistent with a set of half the possible latent realities
+-   A set of hypervector elements specifies the intersection of those sets
+    -   Each element narrows the set of consistent realities
+
+Interpret hypervector as specifying a set of indistinguishable realities rather than being a representation of a single reality
+
+## Possible implications/extensions
+
+-   More feasible search over reality because of the inexactness due to indistinguishability?
+-   Only need sufficient dimensionality to make the distinctions we need
+    -   Optimisation of dimensionality
+    -   Dynamic dimensionality?
+-   Possibility of dynamic constraints
+    -   Effectively adding or removing measurements
+    -   Dynamically creating new measurements on the fly
+
+# Statistical interpretation of algebraic terms
 
 # Understand everything at the element level
 
 # Permutation and indices
-
-# Hypervectors are row vectors
