@@ -635,25 +635,62 @@ is equivalent to the agent’s degree of belief that there is beer in the refrig
 </ul></li>
 <li>Representations can be designed to achieve objectives
 <ul>
-<li><p>What features needed for standard regression?</p></li>
-<li><p>Create algebraic terms that implement those features</p>
+<li>What features needed for standard regression?</li>
+<li>Create algebraic terms that implement those features
 <ul>
 <li>E.g. Epileptic Seizure Challenge needed interactions of time-series features with time of day (bindings)</li>
 </ul></li>
 </ul></li>
 </ul>
 </section></section>
-<section id="understand-everything-at-the-element-level" class="title-slide slide level1 center">
-<h1>Understand everything at the element level</h1>
+<section>
+<section id="indices-and-permutation" class="title-slide slide level1 center">
+<h1>Indices and permutation</h1>
 
 </section>
-
-<section id="permutation-and-indices" class="title-slide slide level1 center">
-<h1>Permutation and indices</h1>
+<section id="element-indices-as-unique-labels" class="slide level2">
+<h2>Element indices as unique labels</h2>
+<ul>
+<li>Computer people tend to think of vector indices as consecutive integers: <span class="math inline">\(a_i\)</span> where <span class="math inline">\(i = 1, 2, \ldots\)</span>
+<ul>
+<li>This imposes more structure than necessary</li>
+</ul></li>
+<li>Indices only need to be unique : <span class="math inline">\(i = sad, bee, hot, \ldots\)</span></li>
+<li>Indices do <em>not</em> need to be ordered
+<ul>
+<li>Ordering convenient for 2D electronic implementation</li>
+<li>Ordering is an imposition for 3D neural implementation</li>
+</ul></li>
+<li>Hypervector is a set of key-value pairs where the values are from the VSA base field (sound familiar?)</li>
+</ul>
+</section>
+<section id="permutation-and-operators" class="slide level2">
+<h2>Permutation and operators</h2>
+<ul>
+<li>It doesn’t make sense to talk of permuting an isolated hypervector (interpreted as set of key-value pairs) because it’s unordered</li>
+<li>Makes sense to talk of permutation:
+<ul>
+<li>relative to another vector,</li>
+<li>when they are being combined by an operator,</li>
+<li>because it’s about tracking which elements are combined <span class="math display">\[\{a_{a1}, a_{a2}, \ldots\} + \rho\{b_{b1}, b_{b2}, \ldots\} = \{x_{a1.b2}, x_{a2.b3}, \ldots\}\]</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="possible-implications-1" class="slide level2">
+<h2>Possible implications</h2>
+<ul>
+<li>What makes a tensor product a tensor product is the pattern of combination of the elements of the arguments and the availability of that pattern to guide tensor operations (e.g.&nbsp;tensor contraction)</li>
+<li>Key-value pairs (hypervector elements) can be represented and operated on as VSA hypervectors</li>
+<li>Is it possible to self-embed?
+<ul>
+<li>Implement tensor product operations with VSA?</li>
+<li>Have dynamic elements (add/remove elements)?</li>
+</ul></li>
+</ul>
 <div class="footer footer-default">
 <p>Midnight Sun Workshop on Vector Symbolic Architectures, June 15-16, 2023, Luleå, Sweden</p>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 

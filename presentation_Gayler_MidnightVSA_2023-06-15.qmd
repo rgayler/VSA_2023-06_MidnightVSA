@@ -227,11 +227,33 @@ Interpret hypervector as specifying a set of indistinguishable realities rather 
     -   E.g. Integer Echo State Network builds standard sequence representation (Interpretable as set of lagged inputs)
 -   Representations can be designed to achieve objectives
     -   What features needed for standard regression?
-
     -   Create algebraic terms that implement those features
-
         -   E.g. Epileptic Seizure Challenge needed interactions of time-series features with time of day (bindings)
 
-# Understand everything at the element level
+# Indices and permutation
 
-# Permutation and indices
+## Element indices as unique labels
+
+-   Computer people tend to think of vector indices as consecutive integers: $a_i$ where $i = 1, 2, \ldots$
+    -   This imposes more structure than necessary
+-   Indices only need to be unique : $i = sad, bee, hot, \ldots$
+-   Indices do *not* need to be ordered
+    -   Ordering convenient for 2D electronic implementation
+    -   Ordering is an imposition for 3D neural implementation
+-   Hypervector is a set of key-value pairs where the values are from the VSA base field (sound familiar?)
+
+## Permutation and operators
+
+-   It doesn't make sense to talk of permuting an isolated hypervector (interpreted as set of key-value pairs) because it's unordered
+-   Makes sense to talk of permutation:
+    -   relative to another vector,
+    -   when they are being combined by an operator,
+    -   because it's about tracking which elements are combined $$\{a_{a1}, a_{a2}, \ldots\} + \rho\{b_{b1}, b_{b2}, \ldots\} = \{x_{a1.b2}, x_{a2.b3}, \ldots\}$$
+
+## Possible implications
+
+-   What makes a tensor product a tensor product is the pattern of combination of the elements of the arguments and the availability of that pattern to guide tensor operations (e.g. tensor contraction)
+-   Key-value pairs (hypervector elements) can be represented and operated on as VSA hypervectors
+-   Is it possible to self-embed?
+    -   Implement tensor product operations with VSA?
+    -   Have dynamic elements (add/remove elements)?
