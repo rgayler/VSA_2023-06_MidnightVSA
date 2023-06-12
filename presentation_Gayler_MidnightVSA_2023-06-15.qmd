@@ -212,15 +212,26 @@ Interpret hypervector as specifying a set of indistinguishable realities rather 
 
 ## Terms as rotated features
 
-* In statistical modelling, we could rotate the data space
-  * Features are spread over columns
-  * Works if rotated features are orthogonal in the data space
-* VSA uses regression to extract predictions from hypervectors
-  * Hypervectors often expressible as sum of algebraic terms
-  * Algebraic terms are often orthogonal (rotated features)
-    * Simple terms represent main effects
-    * Bindings represent interactions
-    
+-   In statistical modelling, we could rotate the data space
+    -   Features are spread over columns
+    -   Works if rotated features are orthogonal in the data space
+-   VSA uses regression to extract predictions from hypervectors
+    -   Hypervectors often expressible as sum of algebraic terms
+    -   Algebraic terms are often orthogonal (rotated features)
+        -   Simple terms represent main effects
+        -   Bindings represent interactions
+
+## Possible implications
+
+-   Operation of VSA regression/classification systems can be understood/analysed with respect to terms in hypervector
+    -   E.g. Integer Echo State Network builds standard sequence representation (Interpretable as set of lagged inputs)
+-   Representations can be designed to achieve objectives
+    -   What features needed for standard regression?
+
+    -   Create algebraic terms that implement those features
+
+        -   E.g. Epileptic Seizure Challenge needed interactions of time-series features with time of day (bindings)
+
 # Understand everything at the element level
 
 # Permutation and indices
