@@ -200,6 +200,27 @@ Interpret hypervector as specifying a set of indistinguishable realities rather 
 
 # Statistical interpretation of algebraic terms
 
+## Statistical data structure
+
+-   Standard statistical data structure is a matrix
+    -   Rows are cases/observations
+    -   Columns are variables/features (predictors and outcomes)
+-   Columns structurally orthogonal in data space (bases)
+-   Features are often single columns (scalar values)
+-   Features can be groups of columns (e.g. one-hot encoding)
+-   Statistical modelling is about exploiting covariation of feature values induced by variation over cases (familiar?)
+
+## Terms as rotated features
+
+* In statistical modelling, we could rotate the data space
+  * Features are spread over columns
+  * Works if rotated features are orthogonal in the data space
+* VSA uses regression to extract predictions from hypervectors
+  * Hypervectors often expressible as sum of algebraic terms
+  * Algebraic terms are often orthogonal (rotated features)
+    * Simple terms represent main effects
+    * Bindings represent interactions
+    
 # Understand everything at the element level
 
 # Permutation and indices

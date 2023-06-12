@@ -588,11 +588,44 @@ is equivalent to the agent’s degree of belief that there is beer in the refrig
 </ul></li>
 </ul>
 </section></section>
+<section>
 <section id="statistical-interpretation-of-algebraic-terms" class="title-slide slide level1 center">
 <h1>Statistical interpretation of algebraic terms</h1>
 
 </section>
-
+<section id="statistical-data-structure" class="slide level2">
+<h2>Statistical data structure</h2>
+<ul>
+<li>Standard statistical data structure is a matrix
+<ul>
+<li>Rows are cases/observations</li>
+<li>Columns are variables/features (predictors and outcomes)</li>
+</ul></li>
+<li>Columns structurally orthogonal in data space (bases)</li>
+<li>Features are often single columns (scalar values)</li>
+<li>Features can be groups of columns (e.g.&nbsp;one-hot encoding)</li>
+<li>Statistical modelling is about exploiting covariation of feature values induced by variation over cases (familiar?)</li>
+</ul>
+</section>
+<section id="terms-as-rotated-features" class="slide level2">
+<h2>Terms as rotated features</h2>
+<ul>
+<li>In statistical modelling, we could rotate the data space
+<ul>
+<li>Features are spread over columns</li>
+<li>Works if rotated features are orthogonal in the data space</li>
+</ul></li>
+<li>VSA uses regression to extract predictions from hypervectors
+<ul>
+<li>Hypervectors often expressible as sum of algebraic terms</li>
+<li>Algebraic terms are often orthogonal (rotated features)
+<ul>
+<li>Simple terms represent main effects</li>
+<li>Bindings represent interactions</li>
+</ul></li>
+</ul></li>
+</ul>
+</section></section>
 <section id="understand-everything-at-the-element-level" class="title-slide slide level1 center">
 <h1>Understand everything at the element level</h1>
 
