@@ -15,15 +15,62 @@ knitr::opts_chunk$set(
 ```
 
 <!-- badges: start -->
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8076736.svg)](https://doi.org/10.5281/zenodo.8076736)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 <!-- badges: end -->
 
-First keynote presentation ("Thinking about Vector Symbolic Architectures") for the [Midnight Sun Workshop on Vector Symbolic Architectures](https://sites.google.com/ltu.se/midnightvsa/home?authuser=0), June 15-16 2023, Luleå, Sweden.
+This repository contains the source code of the slides for the first keynote presentation ("Thinking about Vector Symbolic Architectures") at the [Midnight Sun Workshop on Vector Symbolic Architectures](https://sites.google.com/ltu.se/midnightvsa/home?authuser=0), June 15-16 2023, Luleå, Sweden.
+
+The purpose of this repository is to archive the source code for creating the presentation.
+
+## Related materials
+
+All the materials related to this presentation have been archived on
+[Zenodo](https://zenodo.org/):
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8076677.svg)](https://doi.org/10.5281/zenodo.8076677)
+Video recording
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8076707.svg)](https://doi.org/10.5281/zenodo.8076707)
+Slides (PDF)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8076736.svg)](https://doi.org/10.5281/zenodo.8076736)
+Source code of slides (this repository)
+
+## Project structure
 
 This repository is structured as an [R project](https://r4ds.had.co.nz/workflow-projects.html) containing the source and rendered versions of the presentation.
 The source is a [Quarto presentation](https://quarto.org/docs/presentations/).
 
-The versions of all the packages used to create this presentation have been recorded with the [renv](https://rstudio.github.io/renv/) package.
+I assume you know how to run an R project, so won't go through all the details of installation.
+
+The versions of all the packages used to create this presentation have been recorded with the [`renv`](https://rstudio.github.io/renv/) package.
+To re-run the source code you will need to have `renv` installed. 
+Call `renv::restore()` from within the project to install all the versions of the packages used in this project.
+
+The `assets/` directory contains the images used in the slides.
+
+## Files
+
+`abstract.qmd` - [Quarto](https://quarto.org/docs/output-formats/html-basics.html) source code for the abstract as an HTML document.
+
+`abstract.html` - The abstract rendered as an HTML document. Open this file with a web browser.
+
+`abstract_files/` - Folder of supporting files for the HTML rendering of the abstract.
+It must be in the same folder as the HTML rendering of the abstract.
+
+`presentation_Gayler_MidnightVSA_2023-06-15.qmd` -
+[Quarto](https://quarto.org/docs/presentations/revealjs/) source code for the slides as a [revealjs](https://revealjs.com/) presentation.
+
+`presentation_Gayler_MidnightVSA_2023-06-15.html` - The slides rendered as an HTML document. Open this file with a web browser.
+
+`presentation_Gayler_MidnightVSA_2023-06-15_files/` - Folder of supporting files for the HTML rendering of the slides.
+It must be in the same folder as the HTML rendering of the slides.
+
+`presentation_Gayler_MidnightVSA_2023-06-15.pdf` - The slides rendered as a PDF document. This was created
+by printing the presentation to PDF from the web browser.
 
 <!-- What is special about using `README.Rmd` is you can include R chunks. -->
 

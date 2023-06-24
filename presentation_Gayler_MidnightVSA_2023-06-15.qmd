@@ -257,3 +257,19 @@ Interpret hypervector as specifying a set of indistinguishable realities rather 
 -   Is it possible to self-embed?
     -   Implement tensor product operations with VSA?
     -   Have dynamic elements (add/remove elements)?
+
+# Archival links
+
+This presentation has been archived on
+[Zenodo](https://zenodo.org/):
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8076677.svg)](https://doi.org/10.5281/zenodo.8076677)
+Video recording
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8076707.svg)](https://doi.org/10.5281/zenodo.8076707)
+Slides (PDF)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8076736.svg)](https://doi.org/10.5281/zenodo.8076736)
+Source code of slides
+
+![All licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)](assets/cc_by.png){fig-align="left"}
